@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario POST</title>
+</head>
+<body>
+    <h1 th:text="${titulo}"></h1>
+    <h2>Datos de Usuario</h2>
+    
+    <ul>
+        <label for="">Usuario</label>
+        <li th:text="${username}"></li>
+        <li th:text="${password}"></li>
+        <li th:text="${email}"></li>
+    </ul>
+
+</body>
+</html>
