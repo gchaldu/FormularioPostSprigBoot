@@ -11,9 +11,10 @@
 <body>
     <div class="container">
         <form th:action="@{/form}" method="post" class="row g-3">
-            <div class="col-md-4">
+            < class="col-md-4">
               <label for="inputUser" class="form-label">UserName</label>
               <input type="text" class="form-control" name="username">
+            <div th:if="${errores!=null}" th:text="${errores.get(0)}"></div>
             </div>
             <div class="col-md-4">
                 <label for="inputEmail4" class="form-label">Email</label>
